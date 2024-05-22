@@ -9,13 +9,13 @@ button.forEach((value) => {
         if (value.innerText == "Clar") {
             str = ""
             h1.innerHTML = 0
-        }
-        else if (value.innerText != "=") {
+        }else if (value.innerText != "=") {
             h1.innerText = str += value.innerText
-        } else if (value.innerText == "=") {
+
+        }else if (value.innerText == "=") {
             h1.innerText = eval(str);
+            str = ""
         }
 
     })
-
 })
